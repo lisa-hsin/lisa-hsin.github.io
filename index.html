@@ -1,475 +1,147 @@
-<!DOCTYPE html>  
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>Lisa Hsin</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-/* 
-   This document has been created with Marked.app <http://markedapp.com>, Copyright 2011 Brett Terpstra
-   Please leave this notice in place, along with any additional credits below.
-   ---------------------------------------------------------------
-   Title: BZB
-   Author: Elbie
-   Description: Clean theme good for academic websites
-*/
-body {
-    -webkit-font-smoothing: antialiased;
-    /*font: normal .8764em/1.5em Garamond, Palatino, serif;*/
-    font:'Source Sans Pro', sans-serif;
-    margin: 0 auto;
-    max-width: 700px;
-}
-
-html>body {
-    font-size: 13px;
-}
-
-li {
-    font-size: 115%;
-}
-
-li li {
-    font-size: 100%;
-}
-
-li p {
-    font-size: 100%;
-    margin: .5em 0;
-}
-
-h1 {
-    color: #000;
-    font-size: 2.2857em;
-    line-height: .6563em;
-    margin: .6563em 0;
-}
-
-h2 {
-    color: #111;
-    font-size: 1.7143em;
-    line-height: .875em;
-    margin: .875em 0;
-}
-
-h3 {
-    color: #111;
-    font-size: 1.5em;
-    line-height: 1em;
-    margin: 1em 0;
-}
-
-h4 {
-    color: #111;
-    font-size: 1.2857em;
-    line-height: 1.1667em;
-    margin: 1.1667em 0;
-}
-
-h5 {
-    color: #111;
-    font-size: 1.15em;
-    line-height: 1.3em;
-    margin: 1.3em 0;
-}
-
-h6 {
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 1.5em 0;
-}
-
-body,p,td,div {
-    color: #111;
-    /*font-family: Garamond, "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;*/
-    font-family: 'Source Sans Pro', sans-serif;
-    word-wrap: break-word;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    /*line-height: 1.5em;*/
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #0d6ea1;
-}
-
-a {
-    -webkit-transition: color .2s ease-in-out;
-    -moz-transition: color .2s ease-in-out;
-    -o-transition: color .2s ease-in-out;
-    -ms-transition: color .2s ease-in-out;
-    transition: color .2s ease-in-out;
-    color: #0d6ea1;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #3593d9;
-}
-
-.footnote {
-    color: #0d6ea1;
-    font-size: .8em;
-    vertical-align: super;
-}
-
-#wrapper img {
-    max-width: 100%;
-    height: auto;
-}
-
-dd {
-    margin-bottom: 1em;
-}
-
-li > p:first-child {
-    margin: 0;
-}
-
-ul ul,ul ol {
-    margin-bottom: .4em;
-}
-
-caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr {
-    border-spacing: 0;
-}
-
-table {
-    border: 1px solid rgba(0,0,0,0.25);
-    border-collapse: collapse;
-    display: table;
-    empty-cells: hide;
-    margin: -1px 0 23px;
-    padding: 0;
-    table-layout: fixed;
-}
-
-caption {
-    display: table-caption;
-    font-weight: 700;
-}
-
-col {
-    display: table-column;
-}
-
-colgroup {
-    display: table-column-group;
-}
-
-tbody {
-    display: table-row-group;
-}
-
-tfoot {
-    display: table-footer-group;
-}
-
-thead {
-    display: table-header-group;
-}
-
-td,th {
-    display: table-cell;
-}
-
-tr {
-    display: table-row;
-}
-
-table th,table td {
-    font-size: 1.15em;
-    line-height: 23px;
-    padding: 0 1em;
-}
-
-table thead {
-    background: rgba(0,0,0,0.15);
-    border: 1px solid rgba(0,0,0,0.15);
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-table tbody {
-    background: rgba(0,0,0,0.05);
-}
-
-table tfoot {
-    background: rgba(0,0,0,0.15);
-    border: 1px solid rgba(0,0,0,0.15);
-    border-top: 1px solid rgba(0,0,0,0.2);
-}
-
-figure {
-    display: inline-block;
-    position: relative;
-    margin: 1em 0 2em;
-}
-
-figcaption {
-    font-style: italic;
-    text-align: center;
-    background: white;
-    color: #666;
-    position: absolute;
-    left: 0;
-    bottom: -24px;
-    width: 98%;
-    padding: 1%;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-figure:hover>figcaption {
-    /* background: rgba(0,0,0,1) */
-}
-
-.poetry pre {
-    display: block;
-    font-family: Georgia, Garamond, serif !important;
-    font-size: 110% !important;
-    font-style: italic;
-    line-height: 1.6em;
-    margin-left: 1em;
-}
-
-.poetry pre code {
-    font-family: Georgia, Garamond, serif !important;
-}
-
-blockquote p {
-    font-size: 110%;
-    font-style: italic;
-    line-height: 1.6em;
-}
-
-sup,sub,a.footnote {
-    font-size: 1.4ex;
-    height: 0;
-    line-height: 1;
-    position: relative;
-    vertical-align: super;
-}
-
-sub {
-    vertical-align: sub;
-    top: -1px;
-}
-
-p,h5 {
-    font-size: 1.1429em;
-    line-height: 1.3125em;
-    margin: 1.3125em 0;
-}
-
-dt,th {
-    font-weight: 700;
-}
-
-table tr:nth-child(odd),table th:nth-child(odd),table td:nth-child(odd) {
-    background: rgba(255,255,255,0.06);
-}
-
-table tr:nth-child(even),table td:nth-child(even) {
-    background: rgba(200,200,200,0.25);
-}
-
-@media print {
-    body {
-        overflow: auto;
-    }
-
-    img,pre,blockquote,table,figure,p {
-        page-break-inside: avoid;
-    }
-
-    #wrapper {
-        background: #fff;
-        color: #303030;
-        font-size: 85%;
-        padding: 10px;
-        position: relative;
-        text-indent: 0;
-    }
-}
-
-@media screen {
-    .inverted #wrapper,.inverted {
-        background: rgba(37, 42, 42, 1);
-    }
-
-    .inverted hr {
-        border-color: rgba(51, 63, 64, 1) !important;
-    }
-
-    .inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted pre,.inverted code,.inverted th,.inverted .math,.inverted caption,.inverted dd,.inverted dt {
-        color: #eee !important;
-    }
-
-    .inverted table tr:nth-child(odd),.inverted table th:nth-child(odd),.inverted table td:nth-child(odd) {
-        background: none;
-    }
-
-    .inverted a {
-        color: rgba(172, 209, 213, 1);
-    }
-
-    #wrapper {
-        padding: 20px;
-    }
-
-    ::selection {
-        background: rgba(157, 193, 200,.5);
-    }
-
-    h1::selection {
-        background-color: rgba(45, 156, 208, .3);
-    }
-
-    h2::selection {
-        background-color: rgba(90, 182, 224, .3);
-    }
-
-    h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection {
-        background-color: rgba(133, 201, 232, .3);
-    }
-
-    code::selection {
-        background-color: rgba(0,0,0,.7);
-        color: #eee;
-    }
-
-    code span::selection {
-        background-color: rgba(0,0,0,.7) !important;
-        color: #eee !important;
-    }
-
-    a::selection {
-        background-color: rgba(255, 230, 102,.2);
-    }
-
-    .inverted a::selection {
-        background-color: rgba(255, 230, 102,.6);
-    }
-
-    td::selection,th::selection,caption::selection {
-        background-color: rgba(180, 237, 95, .5);
-    }
-}
-
-@media print{
-#generated-toc-clone,#generated-toc{display:none!important}
-}
-#generated-toc-clone li.missing,#mkreplaced-toc li.missing{list-style-type:none!important}#generated-toc-clone li, #mkreplaced-toc li{list-style-type:upper-roman}#generated-toc-clone li li, #mkreplaced-toc li li{list-style-type:decimal}#generated-toc-clone li li li,#mkreplaced-toc li li li{list-style-type:decimal-leading-zero}#generated-toc-clone li li li li,#mkreplaced-toc li li li li{list-style-type:lower-greek}#generated-toc-clone li li li li li,#mkreplaced-toc li li li li li{list-style-type:disc}#generated-toc-clone li li li li li li,#mkreplaced-toc li li li li li li{list-style-type:square}
-</style>
-
-</head>
-<body class="normal firstload">
-  <div id="wrapper">
-      <h1 id="lisa-hsin">Lisa Hsin</h1>
-
-<h3 id="postdoctoral-associate">Postdoctoral Associate</h3>
-
-<h4 id="center-for-cognitive-studies---tufts-university"><a href="http://ase.tufts.edu/cogstud/">Center for Cognitive Studies</a> @ <a href="http://www.tufts.edu">Tufts University</a></h4>
-
-<hr />
-
-<p><a href="mailto:lisa.hsin@tufts.edu">lisa.hsin@tufts.edu</a> &bull; 111 Miner Hall &bull; Tufts University &bull; Medford, MA 02155  &bull; <a href="tel:6176272341">(617) 627-2341</a></p>
-
-<hr />
-
-<h3 id="research-interests">Research Interests</h3>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Lisa Hsin by lisa-hsin</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Lisa Hsin</h1>
+        <p>Postdoctoral Associate, Center for Cognitive Studies @ Tufts University</p>
+
+
+        <p class="view"><a href="https://github.com/lisa-hsin">View My GitHub Profile</a></p>
+
+      </header>
+      <section>
+        <hr><p><a href="mailto:lisa.hsin@tufts.edu">lisa.hsin@tufts.edu</a> • 111 Miner Hall • Tufts University • Medford, MA 02155  • (617) 627-2341</p>
+
+<hr><h3>
+<a name="research-interests" class="anchor" href="#research-interests"><span class="octicon octicon-link"></span></a>Research Interests</h3>
 
 <ul>
-<li>Bilingualism</li>
-<li>Education &amp; language development</li>
+<li>Bilingual education &amp; language development </li>
 <li>Culturally and linguistically focused academic interventions</li>
 <li>Relationship of language acquisition to executive functions</li>
 <li>Theories of language acquisition &amp; syntactic development</li>
-</ul>
-
-
-<h3 id="education">Education</h3>
+</ul><h3>
+<a name="education" class="anchor" href="#education"><span class="octicon octicon-link"></span></a>Education</h3>
 
 <ul>
 <li>Ph.D. in Cognitive Science, <a href="http://www.jhu.edu/">The Johns Hopkins University</a>, 2014</li>
 <li>M.A. in Cognitive Science, <a href="http://www.jhu.edu/">The Johns Hopkins University</a>, 2011</li>
 <li>A.B. (magna cum laude) in Spanish, minor in Linguistics, <a href="http://www.georgetown.edu/">Georgetown University</a>, 2007</li>
-</ul>
-
-
-<h3 id="publications">Publications</h3>
+</ul><h3>
+<a name="publications" class="anchor" href="#publications"><span class="octicon octicon-link"></span></a>Publications</h3>
 
 <ul>
-<li><strong>Hsin, L.</strong> (to appear). Transfer and Conflict: A Structural Account of Influence in Bilingual First-Language Acquisition. <em>LSRL 41 Selected Proceedings</em>, John Benjamins.</li>
-<li>Gonzalez-Gomez, N., <strong>Hsin, L.</strong>, Culbertson, J., Barrière, Nazzi, T, and G. Legendre. (2014). Revealing Early Comprehension of Subject-Verb Agreement in Spanish. In Orman, W., and Valleau, M.J. (eds.), <em>Proceedings of the 38th Boston University Conference on Language Development,</em> pp. 158-170. Somerville, MA: Cascadilla Press. <a href="https://s3.amazonaws.com/linglabgmufiles/papers/Gonzalez-GomezEtAlBUCLD2013.pdf">pdf</a></li>
-<li><strong>Hsin, L.</strong>, Legendre, G., and Omaki, A. (2013). Priming Cross-Linguistic Interference in Spanish-English Bilingual Children. <em>BUCLD 37 Proceedings (Vol. 1)</em>, pp. 165-177. Somerville, MA: Cascadilla Press. <a href="http://mind.cog.jhu.edu/grad-students/hsin/Hsin&amp;c2013-BUCLD37proceedings.pdf">pdf</a></li>
-<li>Legendre, G., Zaroukian, E., <strong>Hsin, L.</strong>, Culbertson, J., Barrière, I., and Nazzi, T. (2013). Is children’s comprehension of subject-verb agreement universally late? Comparative evidence from French, English, and Spanish. <em>Lingua.</em> <a href="http://www.sciencedirect.com/science/article/pii/S0024384113001277">pdf</a></li>
-<li><strong>Hsin, L.</strong> (2012). Accelerated Acquisition in Spanish-English Bilinguals: the Structural Transfer Hypothesis. In Choi, J., Hogue, E.A, Punske, J., Tat, D., Schertz, J., and Trueman, A. (eds.), <em>Proceedings of the 29th West Coast Conference on Formal Linguistics</em>, pp. 108-116. <a href="http://www.lingref.com/cpp/wccfl/29/paper2693.pdf">pdf</a></li>
-</ul>
-
-
-<h3 id="presentations--amp--posters">Presentations &amp; Posters</h3>
-
-<ul>
-<li><strong>Hsin, L.</strong>, and Legendre, G. (2014). Cross-linguistic facilitation in bilingual morphosyntactic development: Positive linguistic consequences of learning two grammars. In symposium led by Barrière, I., “Diversity and Multifaceted Language Abilities of Dual Language Learners: Implications for Assessment and Policies.” Head Start’s 12th National Research Conference on Early Childhood, Washington, DC.</li>
-<li><strong>Hsin, L.</strong> (2014). From Theory of Mind to Sophisticated Perspective-Taking: The Argumentative Writing of English-Language Learners. Roundtable participant, “‘Do You See What I Mean?’ Taking Perspectives in Written and Spoken Classroom Discourse,” Student Research Conference, Harvard Graduate School of Education, Cambridge, MA.</li>
-<li>González-Gómez, N., <strong>Hsin, L.</strong>, Culbertson, J., Barrière, I., Nazzi, T., and Legendre, G. (2013). Revealing early comprehension of subject-verb agreement in Spanish. Talk to be given at <em>BUCLD 38. (The Boston University Conference on Language Development 38: Boston, MA.)</em></li>
-<li><strong>Hsin, L.</strong>, Legendre, G., and Omaki, A. (2012). Priming cross-linguistic interference in Spanish-English bilingual children. Talk given at <em>BUCLD 37. (The Boston University Conference on Language Development 37: Boston, MA.)</em></li>
-<li><strong>Hsin, L.</strong>, Legendre, G., and Omaki, A. (2012). Priming cross-linguistic interference in bilingual children. Poster presented at <em>AMLaP 2012</em>. (Architectures and Mechanisms for Language Processing: Riva del Garda, Italy.) <a href="http://mind.cog.jhu.edu/grad-students/hsin/AMLaP-poster-Hsin&amp;c.pdf">poster</a></li>
-<li><strong>Hsin, L.</strong>, Legendre, G., and Omaki, A. (2012). Context and constructions: cross-linguistic influence in bilingual preschoolers. Poster presented at the <em>International Workshop on Language Production. (IWOLP 2012: NYU).</em></li>
-<li><strong>Hsin, L.</strong> and Legendre, G. (2011). Accelerated acquisition in English-Spanish bilinguals: the Structural Transfer Hypothesis. Poster presented at the <em>International Congress for the Study of Child Language</em>. <em>(IASCL 12: Université du Québec à Montréal)</em>. <a href="http://mind.cog.jhu.edu/grad-students/hsin/hsin%26legendre_iascl.pdf">poster</a></li>
-<li><strong>Hsin, L.</strong> (2011). Accelerated acquisition in English-Spanish bilinguals: the Transfer/Conflict Hypothesis. Talk given at the <em>41st Linguistic Symposium on Romance Languages (LSRL 41: Ottawa)</em>.</li>
-<li><strong>Hsin, L.</strong> (2011). Accelerated acquisition in English-Spanish bilinguals: the Structural Transfer Hypothesis. <em>Talk given at the West Coast Conference on  Formal Linguistics (WCCFL 29: University of Arizona, Tucson)</em>. <a href="http://mind.cog.jhu.edu/grad-students/hsin/hsinWCCFL29.pdf">slides</a></li>
-<li><strong>Hsin, L.,</strong> and Legendre, G. (2011). Accelerated Acquisition in Early Bilingualism. Poster presented at the <em>2011 IGERT Trainee Poster Competition</em>. <a href="http://mind.cog.jhu.edu/grad-students/hsin/hsinIGERTposter2011.pdf">poster</a></li>
-</ul>
-
-
-<h3 id="teaching">Teaching</h3>
-
-<h5 id="at-tufts-university">At Tufts University</h5>
+<li>
+<strong>Hsin, L.</strong> (to appear). Transfer and Conflict: A Structural Account of Influence in Bilingual First-Language Acquisition. <em>LSRL 41 Selected Proceedings</em>, John Benjamins.</li>
+<li>Gonzalez-Gomez, N., <strong>Hsin, L.</strong>, Culbertson, J., Barrière, Nazzi, T, and G. Legendre. (2014). Revealing Early Comprehension of Subject-Verb Agreement in Spanish. In Orman, W., and Valleau, M.J. (eds.), <em>Proceedings of the 38th Boston University Conference on Language Development,</em> pp. 158-170. Somerville, MA: Cascadilla Press. <a href="https://s3.amazonaws.com/linglabgmufiles/papers/Gonzalez-GomezEtAlBUCLD2013.pdf">pdf</a>
+</li>
+<li>
+<strong>Hsin, L.</strong>, Legendre, G., and Omaki, A. (2013). Priming Cross-Linguistic Interference in Spanish-English Bilingual Children. <em>BUCLD 37 Proceedings (Vol. 1)</em>, pp. 165-177. Somerville, MA: Cascadilla Press. <a href="http://mind.cog.jhu.edu/grad-students/hsin/Hsin&amp;c2013-BUCLD37proceedings.pdf">pdf</a>
+</li>
+<li>Legendre, G., Zaroukian, E., <strong>Hsin, L.</strong>, Culbertson, J., Barrière, I., and Nazzi, T. (2013). Is children’s comprehension of subject-verb agreement universally late? Comparative evidence from French, English, and Spanish. <em>Lingua.</em> <a href="http://www.sciencedirect.com/science/article/pii/S0024384113001277">pdf</a>
+</li>
+<li>
+<strong>Hsin, L.</strong> (2012). Accelerated Acquisition in Spanish-English Bilinguals: the Structural Transfer Hypothesis. In Choi, J., Hogue, E.A, Punske, J., Tat, D., Schertz, J., and Trueman, A. (eds.), <em>Proceedings of the 29th West Coast Conference on Formal Linguistics</em>, pp. 108-116. <a href="http://www.lingref.com/cpp/wccfl/29/paper2693.pdf">pdf</a>
+</li>
+</ul><h3>
+<a name="presentations--posters" class="anchor" href="#presentations--posters"><span class="octicon octicon-link"></span></a>Presentations &amp; Posters</h3>
 
 <ul>
-<li>Spring 2015: <em>Introduction to Linguistics</em></li>
-</ul>
+<li>
+<strong>Hsin, L.</strong>, and Legendre, G. (2014). Cross-linguistic facilitation in bilingual morphosyntactic development: Positive linguistic consequences of learning two grammars. In symposium led by Barrière, I., “Diversity and Multifaceted Language Abilities of Dual Language Learners: Implications for Assessment and Policies.” Head Start’s 12th National Research Conference on Early Childhood, Washington, DC.</li>
+<li>
+<strong>Hsin, L.</strong> (2014). From Theory of Mind to Sophisticated Perspective-Taking: The Argumentative Writing of English-Language Learners. Roundtable participant, “‘Do You See What I Mean?’ Taking Perspectives in Written and Spoken Classroom Discourse,” Student Research Conference, Harvard Graduate School of Education, Cambridge, MA.</li>
+<li>González-Gómez, N., <strong>Hsin, L.</strong>, Culbertson, J., Barrière, I., Nazzi, T., and Legendre, G. (2013). Revealing early comprehension of subject-verb agreement in Spanish. Talk to be given at <em>BUCLD 38. (The Boston University Conference on Language Development 38: Boston, MA.)</em>
+</li>
+<li>
+<strong>Hsin, L.</strong>, Legendre, G., and Omaki, A. (2012). Priming cross-linguistic interference in Spanish-English bilingual children. Talk given at <em>BUCLD 37. (The Boston University Conference on Language Development 37: Boston, MA.)</em>
+</li>
+<li>
+<strong>Hsin, L.</strong>, Legendre, G., and Omaki, A. (2012). Priming cross-linguistic interference in bilingual children. Poster presented at <em>AMLaP 2012</em>. (Architectures and Mechanisms for Language Processing: Riva del Garda, Italy.) <a href="http://mind.cog.jhu.edu/grad-students/hsin/AMLaP-poster-Hsin&amp;c.pdf">poster</a>
+</li>
+<li>
+<strong>Hsin, L.</strong>, Legendre, G., and Omaki, A. (2012). Context and constructions: cross-linguistic influence in bilingual preschoolers. Poster presented at the <em>International Workshop on Language Production. (IWOLP 2012: NYU).</em>
+</li>
+<li>
+<strong>Hsin, L.</strong> and Legendre, G. (2011). Accelerated acquisition in English-Spanish bilinguals: the Structural Transfer Hypothesis. Poster presented at the <em>International Congress for the Study of Child Language</em>. <em>(IASCL 12: Université du Québec à Montréal)</em>. <a href="http://mind.cog.jhu.edu/grad-students/hsin/hsin%26legendre_iascl.pdf">poster</a>
+</li>
+<li>
+<strong>Hsin, L.</strong> (2011). Accelerated acquisition in English-Spanish bilinguals: the Transfer/Conflict Hypothesis. Talk given at the <em>41st Linguistic Symposium on Romance Languages (LSRL 41: Ottawa)</em>.</li>
+<li>
+<strong>Hsin, L.</strong> (2011). Accelerated acquisition in English-Spanish bilinguals: the Structural Transfer Hypothesis. <em>Talk given at the West Coast Conference on  Formal Linguistics (WCCFL 29: University of Arizona, Tucson)</em>. <a href="http://mind.cog.jhu.edu/grad-students/hsin/hsinWCCFL29.pdf">slides</a>
+</li>
+<li>
+<strong>Hsin, L.,</strong> and Legendre, G. (2011). Accelerated Acquisition in Early Bilingualism. Poster presented at the <em>2011 IGERT Trainee Poster Competition</em>. <a href="http://mind.cog.jhu.edu/grad-students/hsin/hsinIGERTposter2011.pdf">poster</a>
+</li>
+</ul><h3>
+<a name="teaching" class="anchor" href="#teaching"><span class="octicon octicon-link"></span></a>Teaching</h3>
 
+<h5>
+<a name="at-tufts-university" class="anchor" href="#at-tufts-university"><span class="octicon octicon-link"></span></a>At Tufts University</h5>
 
-<h5 id="at-johns-hopkins---em-teaching-assistantships--em--">At Johns Hopkins (<em>teaching assistantships</em>)</h5>
+<ul>
+<li>Spring 2015: <em>Introduction to Linguistics</em>
+</li>
+</ul><h5>
+<a name="at-johns-hopkins-teaching-assistantships" class="anchor" href="#at-johns-hopkins-teaching-assistantships"><span class="octicon octicon-link"></span></a>At Johns Hopkins (<em>teaching assistantships</em>)</h5>
 
 <ul>
 <li>Spring 2010: <em>World of Language</em> with Legendre</li>
 <li>Fall 2010: <em>Syntax I</em> with Legendre</li>
 <li>Spring 2011: <em>Cognitive Neuropsychology of Visual Perception</em> with McCloskey</li>
-<li>Fall 2011: <em>Formal Methods: Neural Networks</em> with Smolensky</li>
+<li>Fall 2011: <em>Formal Methods: Neural Networks</em> with Smolensky </li>
 <li>Spring 2012: <em>Foundations in Cognitive Science</em> with Smolensky</li>
 <li>Fall 2012: <em>Cognition</em> with Wilson</li>
 <li>Spring 2013: <em>Syntax I</em> with Legendre</li>
-</ul>
-
-
-<h3 id="honors-and-awards">Honors and Awards</h3>
+</ul><h3>
+<a name="honors-and-awards" class="anchor" href="#honors-and-awards"><span class="octicon octicon-link"></span></a>Honors and Awards</h3>
 
 <ul>
-<li>IGERT Trainee: IGERT awarded to the Johns Hopkins University Department of Cognitive Science (2009-2014)</li>
+<li>IGERT Trainee: IGERT awarded to the Johns Hopkins University Department of Cognitive Science (2009-present)</li>
 <li>Department nominee for IGERT Trainee Poster Competition (2011)</li>
 <li>National Science Foundation Graduate Fellowship: Honorable Mention (2010)</li>
 <li>Phi Beta Kappa (invited 2007; declined)</li>
 <li>Georgetown Faculty of Languages and Linguistics: Outstanding Achievement in Spanish (2007)</li>
-</ul>
-
-
-<h3 id="other-activities">Other Activities</h3>
+</ul><h3>
+<a name="other-activities" class="anchor" href="#other-activities"><span class="octicon octicon-link"></span></a>Other Activities</h3>
 
 <ul>
 <li>Coordinator of Language Acquisition Lab @ JHU</li>
-<li>Contributor to Catalyzing Comprehension through Discussion and Debate project @ <a href="http://www.gse.harvard.edu/">HGSE</a></li>
-</ul>
+<li>Contributor to Catalyzing Comprehension through Discussion and Debate project @ <a href="http://www.gse.harvard.edu/">HGSE</a>
+</li>
+</ul><h4>
+<a name="this-is-what-i-look-like" class="anchor" href="#this-is-what-i-look-like"><span class="octicon octicon-link"></span></a>This is what I look like</h4>
 
-<br/>
-<hr /> <br/>
-<!-- ##END MARKED WRAPPER## -->
+<p><img src="/Users/hsin/Dropbox/UnionCard/writing/figs/lbh.JPG" alt="lisa"></p>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-</body>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-55602204-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
 </html>
