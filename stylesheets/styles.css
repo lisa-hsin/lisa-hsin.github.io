@@ -22,23 +22,23 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
-  color:#4697be;
+  color:#7b3259;
 }
 
 h2 {
-  color:#353535;
+  color:#3549a1;
 }
 
 h3 {
-  color:#6baccc;
+  color:#652e4c;
 }
 
 h4, h5, h6 {
-  color:#4697be;
+  color:#7b3259;
 }
 
 a {
-  color:#377999;
+  color:#3549a1;
   font-weight:400;
   text-decoration:none;
 }
