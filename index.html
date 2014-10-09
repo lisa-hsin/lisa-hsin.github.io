@@ -293,6 +293,14 @@ table tr:nth-child(even),table td:nth-child(even) {
         position: relative;
         text-indent: 0;
     }
+
+    #sidebar {
+  	position: fixed;
+  	top: 40px;
+  	left: 40px;
+  	width: 200px;
+  	border-right:1px solid #aaa;
+	}
 }
 
 @media screen {
@@ -319,6 +327,14 @@ table tr:nth-child(even),table td:nth-child(even) {
     #wrapper {
         padding: 20px;
     }
+
+    #sidebar {
+  	position: fixed;
+  	top: 40px;
+  	left: 40px;
+  	width: 200px;
+  	border-right:1px solid #aaa;
+	}
 
     ::selection {
         background: rgba(157, 193, 200,.5);
@@ -471,5 +487,11 @@ table tr:nth-child(even),table td:nth-child(even) {
 <hr /> <br/>
 <!-- ##END MARKED WRAPPER## -->
     </div>
+
+<div id="sidebar">
+	yo
+
+</div>
+
 </body>
 </html>
