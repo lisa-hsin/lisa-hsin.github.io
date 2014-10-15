@@ -124,7 +124,7 @@ header {
   position:fixed;
 }
 
-header ul {
+/*header ul {
   list-style:none;
   height:40px;
   
@@ -159,14 +159,14 @@ header ul a {
   text-align:center;
   padding-top:6px;
   height:40px;
-}
+}*/
 
 strong {
   color:#494949;
   font-weight:700;
 }
 
-header ul li + li {
+/*header ul li + li {
   width:88px;
   border-left:1px solid #fff;
 }
@@ -180,7 +180,7 @@ header ul a strong {
   font-size:14px;
   display:block;
   color:#222;
-}
+}*/
 
 section {
   width:610px;
