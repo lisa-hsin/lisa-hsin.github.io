@@ -39,31 +39,31 @@ h4, h5, h6 {
 
 /* unvisited link */
 a:link {
-    color: #41561d;
+    color: #4f6923;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #41561d;
+    color: #4f6923;
     text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-    color: #41561d;
+    color: #4f6923;
     text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-    color: #41561d;
+    color: #4f6923;
     text-decoration: underline;
 }
 
 a small {
   font-size:11px;
-  color:#41561d;
+  color:#4f6923;
   margin-top:-0.6em;
   display:block;
 }
