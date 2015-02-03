@@ -657,6 +657,28 @@
 			<key>uuidString</key>
 			<string>FB2448F9-4A99-41B3-9CA0-39CEC6C0729F</string>
 		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>//kasp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-02-03T13:39:00Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-02-03T13:44:42Z</date>
+			<key>plainText</key>
+			<string>tʰ</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8E9FCABE-C49F-44FC-9D32-807344E686F3</string>
+		</dict>
 	</array>
 </dict>
 </plist>
