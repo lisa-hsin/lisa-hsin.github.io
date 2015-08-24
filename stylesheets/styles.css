@@ -2,7 +2,7 @@
 
 body {
   padding:50px;
-  font:14px/1.5 "Source Sans Pro", "Open Sans", "Ideal Sans", Inconsolata, Garamond, Palatino, Georgia, Helvetica, Arial, sans-serif;
+  font:13px/1.5 "Source Sans Pro", "Open Sans", "Ideal Sans", Inconsolata, Garamond, Palatino, Georgia, Helvetica, Arial, sans-serif;
   color:#4f4f4f;
   font-weight:400;
 }
@@ -69,7 +69,7 @@ a small {
 }
 
 .wrapper {
-  width:840px;
+  width:800px;
   margin:0 auto;
 }
 
