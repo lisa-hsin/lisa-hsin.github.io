@@ -22,11 +22,11 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
-  color:#35779c;
+  color:#652e4c;
 }
 
 h2 {
-  color:#3549a1;
+  color:#35779c;
 }
 
 h3 {
@@ -34,7 +34,7 @@ h3 {
 }
 
 h4, h5, h6 {
-  color:#652e4c;
+  color:#707070;
 }
 
 /* unvisited link */
