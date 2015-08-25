@@ -2,7 +2,8 @@
 
 body {
   padding:50px;
-  font:13px/1.5 "Source Sans Pro", "Open Sans", "Ideal Sans", Inconsolata, Garamond, Palatino, Georgia, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
   color:#4f4f4f;
   font-weight:400;
 }
@@ -29,42 +30,42 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
-  color:#652e4c;
+  color:#a51C30;
 }
 
 h2 {
-  color:#35779c;
+  color:#305565;
 }
 
 h3 {
-  color:#35779c;
+  color:#565656;
 }
 
 h4, h5, h6 {
-  color:#707070;
+  color:#47764a;
 }
 
 /* unvisited link */
 a:link {
-    color: #5d7c29;
+    color: #47764a;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #5d7c29;
+    color: #47764a;
     text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-    color: #5d7c29;
+    color: #47764a;
     text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-    color: #5d7c29;
+    color: #47764a;
     text-decoration: underline;
 }
 
