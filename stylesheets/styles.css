@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin:0 0 20px;
   font-size:10px;
-  color:#cccccc;
+  color:#bababa;
 }
 
 ul, ol, table, pre, dl {
@@ -41,7 +41,11 @@ h3 {
   color:#565656;
 }
 
-h4, h5, h6 {
+h4 {
+  color:#a51C30;
+}
+
+h5, h6 {
   color:#565656;
 }
 
